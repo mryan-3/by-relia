@@ -39,7 +39,7 @@ export function PieceCard({
         </span>
       </div>
 
-      <div className="flex flex-col pt-3 gap-1 h-14">
+      <div className="flex flex-col pt-3 gap-1">
         <div className="flex items-center justify-between text-xs text-neutral-500">
           <span className="tracking-tight">[ {tag} ]</span>
           <button
@@ -59,7 +59,7 @@ export function PieceCard({
           </button>
         </div>
 
-        <h3 className="text-xs sm:text-sm font-medium text-black tracking-tight leading-snug truncate">
+        <h3 className="text-xs sm:text-sm font-medium text-black tracking-tight leading-snug">
           {name}
         </h3>
 

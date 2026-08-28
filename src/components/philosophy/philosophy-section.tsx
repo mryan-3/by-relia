@@ -6,7 +6,7 @@ export function PhilosophySection() {
   return (
     <section
       id="stories"
-      className="w-full bg-[#fbfbfb] px-6 sm:px-10 lg:px-12 py-16 sm:py-24"
+      className="w-full bg-[#fbfbfb] px-6 sm:px-10 lg:px-12 py-16 sm:py-24 overflow-hidden"
     >
       <div className="w-full flex flex-col gap-12 sm:gap-16">
         <PhilosophyHeader />

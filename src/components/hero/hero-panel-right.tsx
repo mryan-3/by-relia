@@ -10,7 +10,7 @@ export function HeroPanelRight() {
         fill
         priority
         sizes="(max-width: 1024px) 100vw, 28vw"
-        className="object-cover object-center filter grayscale contrast-[1.05]"
+        className="object-cover object-center filter grayscale contrast-105"
       />
       <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-black/25" />
 

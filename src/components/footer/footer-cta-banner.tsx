@@ -15,7 +15,7 @@ export function FooterCtaBanner() {
       />
 
       {/* Floating White Editorial Invitation Card */}
-      <div className="absolute top-10 sm:top-16 left-6 sm:left-12 max-w-lg bg-white p-8 sm:p-10 shadow-2xl flex flex-col gap-6 z-10">
+      <div className="absolute top-8 sm:top-16 left-6 right-6 sm:right-auto sm:left-12 max-w-lg bg-white p-6 sm:p-10 shadow-2xl flex flex-col gap-5 sm:gap-6 z-10">
         <div className="flex flex-col gap-2">
           <span className="text-xs uppercase tracking-widest text-neutral-500 font-medium">
             Join Us, Will You?
