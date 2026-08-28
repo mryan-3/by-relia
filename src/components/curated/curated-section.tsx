@@ -19,7 +19,7 @@ export function CuratedSection() {
       id="collections"
       className="w-full bg-[#fbfbfb] px-6 sm:px-10 lg:px-12 py-16 sm:py-24"
     >
-      <div className="w-full max-w-[1720px] mx-auto flex flex-col gap-12 sm:gap-16">
+      <div className="w-full flex flex-col gap-12 sm:gap-16">
         {/* Header: Categories Left / Philosophy Quote Right */}
         <div className="grid grid-cols-1 lg:grid-cols-12 items-start gap-8">
           <div className="lg:col-span-4">

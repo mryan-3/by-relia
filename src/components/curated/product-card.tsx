@@ -11,7 +11,7 @@ export function ProductCard({ product }: { product: Product }) {
   return (
     <article className="flex flex-col w-full">
       {/* Product Packshot Canvas */}
-      <div className="relative aspect-square w-full bg-[#eeeeee] overflow-hidden">
+      <div className="relative aspect-square w-full bg-neutral-200/70 overflow-hidden">
         <Image
           src={product.image}
           alt={product.name}
@@ -23,12 +23,12 @@ export function ProductCard({ product }: { product: Product }) {
 
       {/* Meta Information */}
       <div className="flex flex-col pt-3 gap-1">
-        <div className="flex items-center justify-between text-[11px] text-[#767676]">
+        <div className="flex items-center justify-between text-xs text-neutral-500">
           <span className="tracking-tight">[ {product.tag} ]</span>
           <button
             onClick={() => setIsFavorited(!isFavorited)}
             aria-label={`Add ${product.name} to wishlist`}
-            className="text-[#767676] hover:text-black transition-colors cursor-pointer"
+            className="text-neutral-500 hover:text-black transition-colors cursor-pointer"
           >
             <HeartIcon
               filled={isFavorited}
@@ -39,11 +39,11 @@ export function ProductCard({ product }: { product: Product }) {
           </button>
         </div>
 
-        <h3 className="text-xs sm:text-[13px] font-medium text-black tracking-tight leading-snug">
+        <h3 className="text-xs sm:text-sm font-medium text-black tracking-tight leading-snug">
           {product.name}
         </h3>
 
-        <p className="text-xs sm:text-[13px] text-[#444444] font-normal">
+        <p className="text-xs sm:text-sm text-neutral-700 font-normal">
           ${product.price}
         </p>
       </div>

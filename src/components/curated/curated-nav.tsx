@@ -14,21 +14,21 @@ const categories = [
 
 export function CuratedNav({ activeTab, onSelectTab }: CuratedNavProps) {
   return (
-    <div className="flex flex-col items-start gap-1">
+    <div className="flex flex-col items-start gap-1.5">
       {categories.map((cat) => {
         const isActive = activeTab === cat.id;
         return (
           <button
             key={cat.id}
             onClick={() => onSelectTab(cat.id)}
-            className={`group text-left text-sm sm:text-[15px] transition-colors cursor-pointer ${
+            className={`group text-left text-sm sm:text-base transition-colors cursor-pointer ${
               isActive
                 ? "font-semibold text-black"
-                : "font-normal text-[#888888] hover:text-black"
+                : "font-normal text-neutral-500 hover:text-black"
             }`}
           >
             <span>{cat.label}</span>
-            <sup className="text-[10px] ml-0.5 tracking-tighter opacity-80">
+            <sup className="text-xs ml-0.5 tracking-tighter opacity-80">
               [{cat.index}]
             </sup>
           </button>

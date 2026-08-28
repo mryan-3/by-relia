@@ -6,7 +6,7 @@ import { HeartIcon, UserIcon } from "@/components/ui/icons";
 export function HeaderNav() {
   return (
     <header className="absolute top-0 left-0 right-0 z-30 px-6 sm:px-10 py-6 text-white pointer-events-auto">
-      <div className="grid grid-cols-12 items-start text-[13px] tracking-tight font-medium">
+      <div className="grid grid-cols-12 items-start text-xs sm:text-sm tracking-tight font-medium">
         {/* Left: Brand + Nav Links */}
         <div className="col-span-12 lg:col-span-4 flex flex-col gap-5">
           <Link
@@ -26,7 +26,7 @@ export function HeaderNav() {
         {/* Center: Seasonal Collection Line */}
         <div className="hidden lg:block lg:col-span-4 text-center text-white/80">
           <p className="font-light">By.Relia</p>
-          <p className="text-white/60 text-[12px]">— Autumn / Winter Collection</p>
+          <p className="text-white/60 text-xs">— Autumn / Winter Collection</p>
         </div>
 
         {/* Right: Actions */}
